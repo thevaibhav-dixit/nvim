@@ -26,7 +26,9 @@ return require('packer').startup(function(use)
 		}
 	}
 	use('simrat39/rust-tools.nvim')
-	use('morhetz/gruvbox')
+	use("morhetz/gruvbox")
+	use("github/copilot.vim")
+
 end
 
 )

@@ -4,8 +4,6 @@ vim.opt.number = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.autoindent = true
 -- Auto-close brackets
-vim.api.nvim_set_keymap('i', '(', '()<Left>', { noremap = true })
-vim.api.nvim_set_keymap('i', '[', '[]<Left>', { noremap = true })
 vim.api.nvim_set_keymap('i', '"', '""<Left>', { noremap = true })
 vim.api.nvim_set_keymap('i', "'", "''<Left>", { noremap = true })
 vim.opt.tabstop = 2
