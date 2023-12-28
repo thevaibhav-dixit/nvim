@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
 	use("morhetz/gruvbox")
 	use("github/copilot.vim")
 	use('tpope/vim-commentary')
-
+	use('tpope/vim-fugitive')
 end
 
 )
