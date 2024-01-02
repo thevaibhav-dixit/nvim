@@ -10,4 +10,4 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.api.nvim_set_keymap('i', '{<CR>', '{<CR>}<Esc>O', { noremap = true })
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = true, silent = true})
-
+vim.opt.mouse = ""
