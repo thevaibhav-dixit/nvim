@@ -13,23 +13,20 @@ return require('packer').startup(function(use)
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
 		requires = {
-			--- Uncomment these if you want to manage LSP servers from neovim
-			-- {'williamboman/mason.nvim'},
-			-- {'williamboman/mason-lspconfig.nvim'},
-
-			-- LSP Support
+			{'williamboman/mason.nvim'},
+			{'williamboman/mason-lspconfig.nvim'},
 			{'neovim/nvim-lspconfig'},
-			-- Autocompletion
 			{'hrsh7th/nvim-cmp'},
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
 	use('simrat39/rust-tools.nvim')
-	use("morhetz/gruvbox")
 	use("github/copilot.vim")
 	use('tpope/vim-commentary')
 	use('tpope/vim-fugitive')
+	use('vim-airline/vim-airline')
+	use('nanotech/jellybeans.vim')
 end
 
 )

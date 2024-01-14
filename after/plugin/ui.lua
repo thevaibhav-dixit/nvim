@@ -1,2 +1,2 @@
 vim.cmd('syntax enable')
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme jellybeans')
