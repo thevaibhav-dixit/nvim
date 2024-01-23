@@ -149,11 +149,6 @@ _G.packer_plugins = {
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/vim-commentary",

@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
 	use("github/copilot.vim")
 	use('tpope/vim-commentary')
 	use('tpope/vim-fugitive')
-	use('vim-airline/vim-airline')
+	-- use('vim-airline/vim-airline')
 	use('nanotech/jellybeans.vim')
 end
 
