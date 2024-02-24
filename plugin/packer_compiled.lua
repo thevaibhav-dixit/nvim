@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?.lua;/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?/init.lua;/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?.lua;/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1702233742/lib/lua/5.1/?.so"
+local package_path_str = "/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/vaibhav/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  harpoon = {
-    loaded = true,
-    path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
-  },
   ["jellybeans.vim"] = {
     loaded = true,
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/jellybeans.vim",
@@ -124,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -148,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
   },
   ["vim-commentary"] = {
     loaded = true,

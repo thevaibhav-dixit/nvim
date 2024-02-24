@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) 
--- Auto-close brackets
 vim.api.nvim_set_keymap('i', '"', '""<Left>', { noremap = true })
 vim.api.nvim_set_keymap('i', "'", "''<Left>", { noremap = true })
 vim.api.nvim_set_keymap('i', '{<CR>', '{<CR>}<Esc>O', { noremap = true })
@@ -35,8 +34,6 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.statusline = "%f %m%r%y%=%3l,%2c"
 vim.o.tabstop = 2
-vim.o.tags = ".git/tags,./.tags"
-vim.o.undodir = "~/.config/nvim/undo//"
 vim.o.undofile = true
 vim.o.undolevels = 1000
 vim.o.undoreload = 10000
@@ -47,4 +44,4 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {noremap = true, silent = true})
-
+vim.api.nvim_set_keymap('n', '<leader>R', '<cmd>lua vim.lsp.buf.rename()<CR>', { noremap = true, silent = true })

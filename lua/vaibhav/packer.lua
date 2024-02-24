@@ -7,8 +7,8 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	use ('nvim-treesitter/nvim-treesitter', { run =  ':TSUpdate'})
-	use("theprimeagen/harpoon")
+	-- use ('nvim-treesitter/nvim-treesitter', { run =  ':TSUpdate'})
+   require("nvim-treesitter.install").prefer_git = true
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
 	use("github/copilot.vim")
 	use('tpope/vim-commentary')
 	use('tpope/vim-fugitive')
-	-- use('vim-airline/vim-airline')
+	use('vim-airline/vim-airline')
 	use('nanotech/jellybeans.vim')
 end
 
