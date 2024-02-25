@@ -31,8 +31,8 @@ vim.o.smartcase = true
 vim.o.softtabstop = 2
 vim.o.splitbelow = true
 vim.o.splitright = true
-vim.o.statusline = "%f %m%r%y%=%3l,%2c"
 vim.o.tabstop = 2
+vim.o.syntax = "on"
 vim.o.undofile = false
 vim.o.visualbell = true
 vim.o.clipboard = "unnamedplus"
@@ -41,4 +41,20 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {noremap = true, silent = true})
--- vim.api.nvim_set_keymap('i', 'jj', '<Esc>', {noremap = true, silent = true})
+
+local cmp = require'cmp'
+
+cmp.setup({
+  mapping = {
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),   },
+})
+
+local cmp = require'cmp'
+
+cmp.setup({
+  mapping = {
+    ['j'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['k'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
+  },
+})
+
