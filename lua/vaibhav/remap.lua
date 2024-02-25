@@ -33,9 +33,7 @@ vim.o.splitbelow = true
 vim.o.splitright = true
 vim.o.statusline = "%f %m%r%y%=%3l,%2c"
 vim.o.tabstop = 2
-vim.o.undofile = true
-vim.o.undolevels = 1000
-vim.o.undoreload = 10000
+vim.o.undofile = false
 vim.o.visualbell = true
 vim.o.clipboard = "unnamedplus"
 vim.o.wildmenu = true

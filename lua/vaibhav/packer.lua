@@ -11,9 +11,11 @@ return require('packer').startup(function(use)
 	use("github/copilot.vim")
 	use('tpope/vim-commentary')
 	use('tpope/vim-fugitive')
+	-- use('Quramy/tsuquyomi')
 	use('vim-airline/vim-airline')
 	use('nanotech/jellybeans.vim')
 	use('dense-analysis/ale')
+  use("rust-lang/rust.vim")
+  use("williamboman/mason.nvim")
 end
-
 )
