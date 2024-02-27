@@ -37,6 +37,7 @@ vim.o.undofile = false
 vim.o.visualbell = true
 vim.o.clipboard = "unnamedplus"
 vim.o.wildmenu = true
+vim.o.listchars = ""
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', {noremap = true, silent = true})
@@ -48,13 +49,3 @@ cmp.setup({
   mapping = {
     ['<CR>'] = cmp.mapping.confirm({ select = true }),   },
 })
-
-local cmp = require'cmp'
-
-cmp.setup({
-  mapping = {
-    ['j'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
-    ['k'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
-  },
-})
-

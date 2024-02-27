@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["inlay-hints.nvim"] = {
+    loaded = true,
+    path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/inlay-hints.nvim",
+    url = "https://github.com/simrat39/inlay-hints.nvim"
+  },
   ["jellybeans.vim"] = {
     loaded = true,
     path = "/home/vaibhav/.local/share/nvim/site/pack/packer/start/jellybeans.vim",

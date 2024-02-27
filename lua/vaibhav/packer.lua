@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
   use('rafamadriz/friendly-snippets')
 
 	use('simrat39/rust-tools.nvim')
+  use("simrat39/inlay-hints.nvim")
 
 	use('tpope/vim-commentary')
 	use("github/copilot.vim")

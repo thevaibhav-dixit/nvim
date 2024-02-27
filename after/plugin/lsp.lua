@@ -45,3 +45,11 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
   }),
 })
+
+require("rust-tools").setup({
+    tools = {
+        inlay_hints = {
+            auto = true
+        }
+    }
+})
