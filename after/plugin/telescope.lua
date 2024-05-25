@@ -47,6 +47,8 @@ vim.keymap.set('n', '<C-p>', function()
   })
 end, {})
 
+-- ensure that ripgrep is installed for global search to work
+
 vim.keymap.set('n', '<leader>ps', function()
-  builtin.grep_string({ search = vim.fn.input("Grep > ")})
+  builtin.live_grep()
 end)
