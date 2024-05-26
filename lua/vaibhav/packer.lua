@@ -34,6 +34,6 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
 	use('nanotech/jellybeans.vim')
 	use('vim-airline/vim-airline')
-  use('mrcjkb/rustaceanvim')
+  -- use('mrcjkb/rustaceanvim')
 end
 )
