@@ -39,6 +39,13 @@ vim.o.clipboard = "unnamedplus"
 vim.o.wildmenu = true
 vim.o.listchars = ""
 
+vim.api.nvim_set_keymap('n', '<Leader>j', ':resize -10<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>k', ':resize +10<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>h', ':vertical resize -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>l', ':vertical resize +2<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<Leader>=', ':wincmd =<CR>', { noremap = true, silent = true })
+
 local cmp = require'cmp'
 
 cmp.setup({

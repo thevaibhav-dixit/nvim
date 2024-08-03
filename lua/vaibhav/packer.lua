@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
 	use('nanotech/jellybeans.vim')
 	use('vim-airline/vim-airline')
+  use('jose-elias-alvarez/null-ls.nvim')
   -- use('mrcjkb/rustaceanvim')
 end
 )
