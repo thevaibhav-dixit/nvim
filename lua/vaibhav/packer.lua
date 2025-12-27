@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
   use('rafamadriz/friendly-snippets')
   use "EdenEast/nightfox.nvim"
 
-	use('simrat39/rust-tools.nvim')
+	-- use('simrat39/rust-tools.nvim')
   use("simrat39/inlay-hints.nvim")
 
 	use('tpope/vim-commentary')
@@ -36,6 +36,6 @@ return require('packer').startup(function(use)
 	use('nanotech/jellybeans.vim')
 	use('vim-airline/vim-airline')
   use('jose-elias-alvarez/null-ls.nvim')
-  -- use('mrcjkb/rustaceanvim')
+  use('mrcjkb/rustaceanvim')
 end
 )
