@@ -3,8 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.5',
-		-- or                            , branch = '0.1.x',
+		'nvim-telescope/telescope.nvim', tag = '0.1.8',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
   use('neovim/nvim-lspconfig')
@@ -35,7 +34,17 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
 	use('nanotech/jellybeans.vim')
 	use('vim-airline/vim-airline')
-  use('jose-elias-alvarez/null-ls.nvim')
+  use('nvimtools/none-ls.nvim')
   use('mrcjkb/rustaceanvim')
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+  }
+  use {
+    'MeanderingProgrammer/render-markdown.nvim',
+    requires = {
+      'nvim-treesitter/nvim-treesitter',
+    },
+  }
 end
 )
